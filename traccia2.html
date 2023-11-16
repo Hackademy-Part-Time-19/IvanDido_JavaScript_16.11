@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        let importo
+        let saldo=0
+        let v
+        while(v!=4){
+            
+            v=parseInt(prompt("Che operazione vuole effettuare? 1.Bonifico 2.Prelevare 3.Mostra Saldo 4.Chiudi"))
+            
+            switch(v){
+                
+                case 1: 
+                importo=parseInt(prompt("Inserire l'importo per il bonifico: "))
+                saldo=saldo+importo
+                break;
+                
+                case 2: 
+                importo=parseInt(prompt("Inserire l'importo da Prelevare: "))
+                if(importo<=saldo){saldo=saldo-importo}
+                else alert("Operazione non concessa.")
+                break;
+                
+                case 3: 
+                alert("Il saldo disponibile è: "+saldo)
+                break;
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>
