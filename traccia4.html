@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        let importo
+        var cassa=0
+        let v
+        let o
+        while(v!=7){
+            
+            v=parseInt(prompt("PER ORDINARE PREMERE 1.CocaCola 2.Fanta 3.EstaThe Limone Saldo 4.Estathe Pesca 5.Sprite 6.SALDO TOTALE 7.ESCI"))
+            
+            switch(v){
+                
+                case 1: 
+                o=parseInt(prompt("Hai selezionato CocaCola (€2,00) Aggiungere all'ordine? PREMERE 1.Si 2.No"))
+                if(o==1){
+                    alert("Bevanda aggiunta all'ordine")
+                    cassa=cassa+2} 
+                else alert("Bevanda annullata")
+                break;
+                
+                case 2: 
+                o=parseInt(prompt("Hai selezionato Fanta (€2,00) Aggiungere all'ordine? PREMERE 1.Si 2.No"))
+                if(o==1){
+                    alert("Bevanda aggiunta all'ordine")
+                    cassa=cassa+2} 
+                else alert("Bevanda annullata")
+                break;
+                
+                case 3: 
+                o=parseInt(prompt("Hai selezionato Estathe Limone (€1,50) Aggiungere all'ordine? PREMERE 1.Si 2.No"))
+                if(o==1){
+                    alert("Bevanda aggiunta all'ordine")
+                    cassa=cassa+1.50} 
+                else alert("Bevanda annullata")
+                break;
+
+                case 4: 
+                o=parseInt(prompt("Hai selezionato Estathe Pesca (€1,50) Aggiungere all'ordine? PREMERE 1.Si 2.No"))
+                if(o==1){
+                    alert("Bevanda aggiunta all'ordine")
+                    cassa=cassa+1.50} 
+                else alert("Bevanda annullata")
+                break;
+
+                case 5: 
+                o=parseInt(prompt("Hai selezionato Sprite (€1,50) Aggiungere all'ordine? PREMERE 1.Si 2.No"))
+                if(o==1){
+                    alert("Bevanda aggiunta all'ordine")
+                    cassa=cassa+1.50} 
+                else alert("Bevanda annullata")
+                break;
+
+                case 6:
+                    alert("IL saldo attuale è di: €"+ cassa)
+                break;
+            }
+        }
+
+        if(cassa==0){alert("Ordine non effettuato")}
+        else alert("Ordine effettuato. Il saldo totale è di: €" + cassa)
+        
+    </script>
+    
+</body>
+</html>
